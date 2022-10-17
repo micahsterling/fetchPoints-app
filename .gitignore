@@ -1,0 +1,10 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+node_modules/
