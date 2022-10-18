@@ -9,14 +9,14 @@ router.get("/point", controller.getPoints);
 // Add points (POST)
 router.post(
   "/point",
-
+  controller.validate("addPoints"),
   controller.addPoints
 );
 
 // Spend points (POST)
 router.post(
   "/point/spend",
-
+  controller.validate("spendPoints"),
   controller.spendPoints
 );
 
