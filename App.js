@@ -15,6 +15,9 @@ app.get("/", function (req, res) {
 
 global.points = [];
 
+const pointRouter = require("./API/route");
+app.use("/", pointRouter);
+
 app.listen(4000, function () {
   console.log("Started application on port %d", 4000)
 });
