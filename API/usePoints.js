@@ -64,6 +64,5 @@ exports.spendPoints = function (bill) {
     // Subtract points from payer
     result[pt.payer] -= pt.points;
   })
-  console.log("spentPoints", spentPoints)
   return result;
 }
