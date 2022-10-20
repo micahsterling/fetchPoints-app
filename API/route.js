@@ -4,18 +4,18 @@ const router = express.Router();
 const controller = require("./controller");
 
 // GET points
-router.get("/point", controller.getPoints);
+router.get("/balance", controller.getPoints);
 
 // Add points (POST)
 router.post(
-  "/point",
+  "/points",
   controller.validate("addPoints"),
   controller.addPoints
 );
 
 // Spend points (POST)
 router.post(
-  "/point/spend",
+  "/points/spent",
   controller.validate("spendPoints"),
   controller.spendPoints
 );
