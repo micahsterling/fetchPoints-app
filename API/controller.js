@@ -22,6 +22,7 @@ exports.addPoints = function (req, res) {
     return;
   }
 
+  req.body.points = parseInt(req.body.points)
   points.push(req.body);
   res.json(points);
 }
