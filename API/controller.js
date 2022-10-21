@@ -51,7 +51,7 @@ exports.validate = (method) => {
     case "addPoints": {
       return [
         body("payer", "payer string not found").isString(),
-        body("points", "points must be a positive number").isInt({ gt: 0 }),
+        body("points", "points must be number").isInt(),
         body("timestamp", "timestamp must be a date").isISO8601(),
       ];
     }
